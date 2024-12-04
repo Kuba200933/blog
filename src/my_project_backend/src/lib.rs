@@ -3,8 +3,6 @@ use crate::blog::Blog;
 
 mod blog;
 
-//validacja contentu < 500 i tagow <= 3
-
 thread_local! {
     static BLOGS: RefCell<Vec<Blog>> = RefCell::new(Vec::new());
 }
